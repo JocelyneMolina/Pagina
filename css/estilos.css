@@ -11,6 +11,11 @@ body {
     /*margin-top: 50px;  ajusta el valor según sea necesario para que sea igual a la altura de la navbar */
     font-family: 'Lexend Mega';
 }
+.navbar-nav li a {
+    font-size: 20px;
+    font-family: "Lexend Mega"  ;
+  }
+  
 
 .contenedor {
     /* padding es para espcacio entre secciones, se centra */
@@ -20,10 +25,33 @@ body {
     margin: auto;
     overflow: hidden;
 }
+.contenedor-historia{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-historia{
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+.contenedor-historia .contenido-historia{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-style: oblique;
+}
 
 .titulo {
     color: #020873;
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -44,39 +72,6 @@ header {
     position: relative;
 }
 
-nav{
-    /* */
-    /*nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50px; 
-      }
-      
-    text-align: right;
-    padding: 30px 50px 0 0;*/
-    text-align: right;
-    padding: 30px 50px 0 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-color: #333;
-}
-
-nav > a{
-    color:#7fbdd0;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-nav > a:hover{
-    text-decoration: underline;
-}
-
 header .textos-header{
     display: flex;
     height: 430px;
@@ -88,12 +83,14 @@ header .textos-header{
 }
 
 .textos-header h1{
-    font-size: 50px;
+    font-family: lexend mega;
+    font-size: 70px;
     color:#fff;
 }
 
 .textos-header h2{
-    font-size: 30px;
+    font-family: lexend mega;
+    font-size: 40px;
     font-weight: 300;
     color:#fff;
 }
@@ -149,57 +146,17 @@ main .sobre-nosotros{
 
 
 .portafolio{
+    font-family: lexend mega;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
     background: #f2f2f2;
 }
-
-.galeria-port{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.imagen-port{
-    width: 24%;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-}
-
-.imagen-port > img{
+.carousel-item active > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
-}
-
-.hover-galeria{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0);
-    background: hsla(273,91%,27%, 0.7);
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hover-galeria img{
-    width: 50px;
-}
-
-.hover-galeria p{
-    color: #fff;
-}
-
-.imagen-port:hover .hover-galeria{
-    transform: scale(1);
-}
-
+  }
 /* Clients */
 
 .cards{
@@ -238,7 +195,62 @@ main .sobre-nosotros{
 }
 
 /*  Our team */
+.about
+{
+    font-family: lexend mega;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    background: #f2f2f2;
+}
+.vision-mision{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0 60px 0;
+}
 
+.mision{
+    width: 28%;
+    text-align: center;
+    margin: 10px 0;
+}
+.vision{
+    width: 28%;
+    text-align: center;
+    margin: 10px 0;
+}
+.mision img{
+    width: 90%;
+    margin: 70px 0;
+}
+.vision img{
+    width: 90%;
+    margin: 70px 0;
+}
+
+.vision h3{
+    font-size: 50px;
+    margin: 60px 0;
+}
+.mision h3{
+    font-size: 50px;
+    margin: 0px 0;
+}
+
+.mision p{
+    font-weight: 70;
+    text-align: justify;
+}
+.vision p{
+    font-weight: 70;
+    text-align: justify;
+}
+
+
+
+/* Services */
 .about-services{
     background: #f2f2f2;
     padding-bottom: 30px;
